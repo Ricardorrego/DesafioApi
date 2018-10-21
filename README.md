@@ -9,28 +9,30 @@ bundle install
 ### Run tests in DEV###
 Type this in the tests folder:
 ```shell
-bundle exec cucumber
+cucumber -p pretty -p html -p dev
 ```
 ### Run tests in HMG ###
 Type this in the tests folder:
 ```shell
-bundle exec cucumber -p json -p hmg
+cucumber -p pretty -p html -p hmg
 ```
 
-### HTML Report###
+### Run with Rake###
 Type this in the tests folder:
 ```shell
-bundle exec cucumber -p html -p hmg
+rake test_dev
+rake test_hmg
 ```
 
 ### Json Report###
 Type this in the tests folder:
 ```shell
-bundle exec cucumber -p json -p hmg
+cucumber -p json -p hmg
 ```
 
 ### Run with tags###
 Type this in the tests folder:
 ```shell
-bundle exec cucumber --tags @run
+cucumber --tags @executa_post
+cucumber --tags @executa_get
 ```

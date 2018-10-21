@@ -1,0 +1,122 @@
+[
+  {
+    "uri": "features/steps_definitions/verbo_get.feature",
+    "id": "aprendendo-o-verbo-get",
+    "keyword": "Funcionalidade",
+    "name": "Aprendendo o verbo GET",
+    "description": "",
+    "line": 3,
+    "tags": [
+      {
+        "name": "@get",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "id": "aprendendo-o-verbo-get;automatizando-o-get",
+        "keyword": "Cenario",
+        "name": "Automatizando o GET",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@get",
+            "line": 2
+          },
+          {
+            "name": "@executa_get",
+            "line": 5
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu faça um GET no endpoint clientes",
+            "line": 8,
+            "match": {
+              "location": "features/specifications/verbo_get.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "SSL_connect returned=1 errno=0 state=error: certificate verify failed (OpenSSL::SSL::SSLError)\n./features/specifications/verbo_get.rb:2:in `\"que eu faça um GET no endpoint clientes\"'\nfeatures/steps_definitions/verbo_get.feature:8:in `Dado que eu faça um GET no endpoint clientes'",
+              "duration": 2397054947
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o retorno dele será todos os clientes cadastrados",
+            "line": 9,
+            "match": {
+              "location": "features/specifications/verbo_get.rb:5"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/steps_definitions/verbo_post.feature",
+    "id": "verbo-post-em-books",
+    "keyword": "Funcionalidade",
+    "name": "Verbo POST em Books",
+    "description": "",
+    "line": 3,
+    "tags": [
+      {
+        "name": "@post",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "id": "verbo-post-em-books;enviar-com-sucesso-um-novo-cliente",
+        "keyword": "Cenario",
+        "name": "Enviar com sucesso um novo cliente",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@post",
+            "line": 2
+          },
+          {
+            "name": "@executa_post",
+            "line": 5
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu envie os parâmetros corretos para o endpoint Books",
+            "line": 7,
+            "match": {
+              "location": "features/specifications/verbo_post.rb:3"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "SSL_connect returned=1 errno=0 state=error: certificate verify failed (OpenSSL::SSL::SSLError)\n./features/specifications/verbo_post.rb:7:in `\"que eu envie os parâmetros corretos para o endpoint Books\"'\nfeatures/steps_definitions/verbo_post.feature:7:in `Dado que eu envie os parâmetros corretos para o endpoint Books'",
+              "duration": 1051685481
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "um novo cliente é cadastrado com sucesso na base",
+            "line": 8,
+            "match": {
+              "location": "features/specifications/verbo_post.rb:10"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
